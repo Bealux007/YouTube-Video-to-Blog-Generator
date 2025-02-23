@@ -20,7 +20,7 @@ The YouTube Video to Blog Generator is an AI-powered application that extracts t
 
 
 **🛠 Technologies Used**
-Technology	Purpose
+
 Streamlit 🎨	Web UI for the application
 YouTube Transcript API 🎥	Extracts transcript from YouTube videos
 OpenAI GPT-4 🤖	Generates well-structured blog articles
@@ -32,6 +32,7 @@ Requests 🌍	Fetches images from OpenAI APIs
 **📜 File Descriptions**
 
 **1️⃣ app.py (Main Application)**
+
 Provides a Streamlit-based UI for users to input YouTube video URLs.
 Extracts transcripts using the YouTube Transcript API.
 Processes the transcript with GPT-4, generating structured blog articles.
@@ -40,6 +41,7 @@ Converts text into an audio file using gTTS.
 Displays the title, subtitle, blog article, image, and audio playback in an intuitive interface.
 
 **2️⃣ requirements.txt (Dependencies)**
+
 Lists all required libraries:
 streamlit: For building the UI.
 youtube_transcript_api: To fetch YouTube video transcripts.
@@ -49,19 +51,25 @@ requests: To fetch images from OpenAI.
 pillow: To handle image processing.
 
 **🛠 Installation & Setup**
+
 **1️⃣ Clone the Repository**
+
 git clone https://github.com/Bealux007/YouTube-Blog-Generator.git
 cd YouTube-Blog-Generator
 **2️⃣ Create a Virtual Environment**
+
 python -m venv venv
 source venv/bin/activate  # Mac/Linux
 venv\Scripts\activate  # Windows
 **3️⃣ Install Dependencies**
+
 pip install -r requirements.txt
 **4️⃣ Set Up API Keys**
+
 OPENAI_API_KEY=your-api-key-here
 
 **🚀 Running the Application**
+
 Run the Streamlit Web App
 streamlit run app.py
 Open the generated local link.
@@ -70,22 +78,28 @@ View the generated blog, image, and audio playback.
 
 
 **🌟 How It Works**
+
 **1️⃣ Extracting the Transcript**
+
 Uses the YouTube Transcript API to fetch the transcript.
 Cleans and structures the extracted text.
 **2️⃣ Generating a Blog Article**
+
 Uses GPT-4 to rewrite the transcript into a structured blog post.
 Generates a title and subtitle for the blog.
 **3️⃣ Creating an AI-Generated Image**
+
 Uses DALL·E 3 to generate a high-quality blog image based on the blog title and subtitle.
 **4️⃣ Converting the Blog to Speech**
+
 Uses gTTS (Google Text-to-Speech) to create an audio narration of the blog.
 
 
 **🔮 Future Improvements**
+
 🔹 Enhance Speech-to-Text Accuracy – Improve handling of transcripts for better readability.
 🔹 Expand Image Customization – Allow users to select different image styles.
-🔹 Improve UI/UX – Enhance the web interface for better user experience.
+🔹 Improve UI/UX – Enhance the web interface for a better user experience.
 🔹 Multi-Language Support – Allow blog generation in multiple languages.
 
 **📜 License**
