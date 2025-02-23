@@ -1,0 +1,6 @@
+streamlit
+youtube_transcript_api
+gtts
+openai 
+requests 
+pillow
